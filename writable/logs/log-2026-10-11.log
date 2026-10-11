@@ -1,0 +1,214 @@
+ERROR - 2026-10-11 16:44:55 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\Soriano\TSA1,2\system\Database\MySQLi\Connection.php:200
+Stack trace:
+#0 C:\xampp\htdocs\Soriano\TSA1,2\system\Database\MySQLi\Connection.php(200): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), 'task_today', 3306, '', 0)
+#1 C:\xampp\htdocs\Soriano\TSA1,2\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Soriano\TSA1,2\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Soriano\TSA1,2\system\Database\BaseConnection.php(1709): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\xampp\htdocs\Soriano\TSA1,2\system\Database\BaseConnection.php(1729): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\xampp\htdocs\Soriano\TSA1,2\system\Database\MigrationRunner.php(831): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\xampp\htdocs\Soriano\TSA1,2\system\Database\MigrationRunner.php(173): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\xampp\htdocs\Soriano\TSA1,2\system\Commands\Database\Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\Soriano\TSA1,2\system\CLI\SignalTrait.php(243): CodeIgniter\Commands\Database\Migrate::CodeIgniter\Commands\Database\{closure}()
+#9 C:\xampp\htdocs\Soriano\TSA1,2\system\Commands\Database\Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked(Object(Closure))
+#10 C:\xampp\htdocs\Soriano\TSA1,2\system\CLI\Commands.php(72): CodeIgniter\Commands\Database\Migrate->run(Array)
+#11 C:\xampp\htdocs\Soriano\TSA1,2\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#12 C:\xampp\htdocs\Soriano\TSA1,2\system\Boot.php(444): CodeIgniter\CLI\Console->run()
+#13 C:\xampp\htdocs\Soriano\TSA1,2\system\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#14 C:\xampp\htdocs\Soriano\TSA1,2\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\Soriano\TSA1,2\system\Database\MySQLi\Connection.php:230
+Stack trace:
+#0 C:\xampp\htdocs\Soriano\TSA1,2\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Soriano\TSA1,2\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Soriano\TSA1,2\system\Database\BaseConnection.php(1709): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\xampp\htdocs\Soriano\TSA1,2\system\Database\BaseConnection.php(1729): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\xampp\htdocs\Soriano\TSA1,2\system\Database\MigrationRunner.php(831): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\xampp\htdocs\Soriano\TSA1,2\system\Database\MigrationRunner.php(173): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\xampp\htdocs\Soriano\TSA1,2\system\Commands\Database\Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\xampp\htdocs\Soriano\TSA1,2\system\CLI\SignalTrait.php(243): CodeIgniter\Commands\Database\Migrate::CodeIgniter\Commands\Database\{closure}()
+#8 C:\xampp\htdocs\Soriano\TSA1,2\system\Commands\Database\Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked(Object(Closure))
+#9 C:\xampp\htdocs\Soriano\TSA1,2\system\CLI\Commands.php(72): CodeIgniter\Commands\Database\Migrate->run(Array)
+#10 C:\xampp\htdocs\Soriano\TSA1,2\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#11 C:\xampp\htdocs\Soriano\TSA1,2\system\Boot.php(444): CodeIgniter\CLI\Console->run()
+#12 C:\xampp\htdocs\Soriano\TSA1,2\system\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#13 C:\xampp\htdocs\Soriano\TSA1,2\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#14 {main}
+ERROR - 2026-10-11 16:47:26 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'task_today' in C:\xampp\htdocs\Soriano\TSA1,2\system\Database\MySQLi\Connection.php:200
+Stack trace:
+#0 C:\xampp\htdocs\Soriano\TSA1,2\system\Database\MySQLi\Connection.php(200): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'task_today', 3306, '', 0)
+#1 C:\xampp\htdocs\Soriano\TSA1,2\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Soriano\TSA1,2\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Soriano\TSA1,2\system\Database\BaseConnection.php(1709): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\xampp\htdocs\Soriano\TSA1,2\system\Database\BaseConnection.php(1729): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\xampp\htdocs\Soriano\TSA1,2\system\Database\MigrationRunner.php(831): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\xampp\htdocs\Soriano\TSA1,2\system\Database\MigrationRunner.php(173): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\xampp\htdocs\Soriano\TSA1,2\system\Commands\Database\Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\Soriano\TSA1,2\system\CLI\SignalTrait.php(243): CodeIgniter\Commands\Database\Migrate::CodeIgniter\Commands\Database\{closure}()
+#9 C:\xampp\htdocs\Soriano\TSA1,2\system\Commands\Database\Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked(Object(Closure))
+#10 C:\xampp\htdocs\Soriano\TSA1,2\system\CLI\Commands.php(72): CodeIgniter\Commands\Database\Migrate->run(Array)
+#11 C:\xampp\htdocs\Soriano\TSA1,2\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#12 C:\xampp\htdocs\Soriano\TSA1,2\system\Boot.php(444): CodeIgniter\CLI\Console->run()
+#13 C:\xampp\htdocs\Soriano\TSA1,2\system\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#14 C:\xampp\htdocs\Soriano\TSA1,2\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'task_today' in C:\xampp\htdocs\Soriano\TSA1,2\system\Database\MySQLi\Connection.php:230
+Stack trace:
+#0 C:\xampp\htdocs\Soriano\TSA1,2\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Soriano\TSA1,2\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Soriano\TSA1,2\system\Database\BaseConnection.php(1709): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\xampp\htdocs\Soriano\TSA1,2\system\Database\BaseConnection.php(1729): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\xampp\htdocs\Soriano\TSA1,2\system\Database\MigrationRunner.php(831): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\xampp\htdocs\Soriano\TSA1,2\system\Database\MigrationRunner.php(173): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\xampp\htdocs\Soriano\TSA1,2\system\Commands\Database\Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\xampp\htdocs\Soriano\TSA1,2\system\CLI\SignalTrait.php(243): CodeIgniter\Commands\Database\Migrate::CodeIgniter\Commands\Database\{closure}()
+#8 C:\xampp\htdocs\Soriano\TSA1,2\system\Commands\Database\Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked(Object(Closure))
+#9 C:\xampp\htdocs\Soriano\TSA1,2\system\CLI\Commands.php(72): CodeIgniter\Commands\Database\Migrate->run(Array)
+#10 C:\xampp\htdocs\Soriano\TSA1,2\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#11 C:\xampp\htdocs\Soriano\TSA1,2\system\Boot.php(444): CodeIgniter\CLI\Console->run()
+#12 C:\xampp\htdocs\Soriano\TSA1,2\system\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#13 C:\xampp\htdocs\Soriano\TSA1,2\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#14 {main}
+ERROR - 2026-10-11 16:59:32 --> Table 'task_today.tasks' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 294.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(294): mysqli->query('INSERT INTO `tasks` (`created_at`, `status`, `task_date`, `title`)
+VALUES (\'2026-10-11 16:59:32\',\'pending\',\'2026-10-11\',\'Review project requirements\'), (\'2026-10-11 16:59:32\',\'pending\',\'2026-10-11\',\'Prepare daily report\'), (\'2026-10-11 16:59:32\',\'completed\',\'2026-10-11\',\'Check team messages\'), (\'2026-10-11 16:59:32\',\'pending\',\'2026-10-10\',\'Update task list\'), (\'2026-10-11 16:59:32\',\'completed\',\'2026-10-10\',\'Organize project files\'), (\'2026-10-11 16:59:32\',\'pending\',\'2026-10-10\',\'Send progress update\'), (\'2026-10-11 16:59:32\',\'pending\',\'2026-10-09\',\'Plan upcoming work\'), (\'2026-10-11 16:59:32\',\'completed\',\'2026-10-09\',\'Review completed tasks\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(905): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tasks` (`created_at`, `status`, `task_date`, `title`)
+VALUES (\'2026-10-11 16:59:32\',\'pending\',\'2026-10-11\',\'Review project requirements\'), (\'2026-10-11 16:59:32\',\'pending\',\'2026-10-11\',\'Prepare daily report\'), (\'2026-10-11 16:59:32\',\'completed\',\'2026-10-11\',\'Check team messages\'), (\'2026-10-11 16:59:32\',\'pending\',\'2026-10-10\',\'Update task list\'), (\'2026-10-11 16:59:32\',\'completed\',\'2026-10-10\',\'Organize project files\'), (\'2026-10-11 16:59:32\',\'pending\',\'2026-10-10\',\'Send progress update\'), (\'2026-10-11 16:59:32\',\'pending\',\'2026-10-09\',\'Plan upcoming work\'), (\'2026-10-11 16:59:32\',\'completed\',\'2026-10-09\',\'Review completed tasks\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(822): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tasks` (`created_at`, `status`, `task_date`, `title`)
+VALUES (\'2026-10-11 16:59:32\',\'pending\',\'2026-10-11\',\'Review project requirements\'), (\'2026-10-11 16:59:32\',\'pending\',\'2026-10-11\',\'Prepare daily report\'), (\'2026-10-11 16:59:32\',\'completed\',\'2026-10-11\',\'Check team messages\'), (\'2026-10-11 16:59:32\',\'pending\',\'2026-10-10\',\'Update task list\'), (\'2026-10-11 16:59:32\',\'completed\',\'2026-10-10\',\'Organize project files\'), (\'2026-10-11 16:59:32\',\'pending\',\'2026-10-10\',\'Send progress update\'), (\'2026-10-11 16:59:32\',\'pending\',\'2026-10-09\',\'Plan upcoming work\'), (\'2026-10-11 16:59:32\',\'completed\',\'2026-10-09\',\'Review completed tasks\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1852): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tasks` (`created_at`, `status`, `task_date`, `title`)
+VALUES (\'2026-10-11 16:59:32\',\'pending\',\'2026-10-11\',\'Review project requirements\'), (\'2026-10-11 16:59:32\',\'pending\',\'2026-10-11\',\'Prepare daily report\'), (\'2026-10-11 16:59:32\',\'completed\',\'2026-10-11\',\'Check team messages\'), (\'2026-10-11 16:59:32\',\'pending\',\'2026-10-10\',\'Update task list\'), (\'2026-10-11 16:59:32\',\'completed\',\'2026-10-10\',\'Organize project files\'), (\'2026-10-11 16:59:32\',\'pending\',\'2026-10-10\',\'Send progress update\'), (\'2026-10-11 16:59:32\',\'pending\',\'2026-10-09\',\'Plan upcoming work\'), (\'2026-10-11 16:59:32\',\'completed\',\'2026-10-09\',\'Review completed tasks\')', null, false)
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2247): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 6 APPPATH\Database\Seeds\TasksSeeder.php(27): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 7 SYSTEMPATH\Database\Seeder.php(155): App\Database\Seeds\TasksSeeder->run()
+ 8 SYSTEMPATH\Commands\Database\Seed.php(79): CodeIgniter\Database\Seeder->call('App\\Database\\Seeds\\TasksSeeder')
+ 9 SYSTEMPATH\CLI\Commands.php(72): CodeIgniter\Commands\Database\Seed->run([])
+10 SYSTEMPATH\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('db:seed', [...])
+11 SYSTEMPATH\Boot.php(444): CodeIgniter\CLI\Console->run()
+12 SYSTEMPATH\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+13 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+ERROR - 2026-10-11 17:06:00 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'task_today' in C:\xampp\htdocs\Soriano\TSA1,2\system\Database\MySQLi\Connection.php:200
+Stack trace:
+#0 C:\xampp\htdocs\Soriano\TSA1,2\system\Database\MySQLi\Connection.php(200): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'task_today', 3306, '', 0)
+#1 C:\xampp\htdocs\Soriano\TSA1,2\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Soriano\TSA1,2\system\Database\Database.php(76): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Soriano\TSA1,2\system\Database\Config.php(111): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#4 C:\xampp\htdocs\Soriano\TSA1,2\system\Database\Seeder.php(103): CodeIgniter\Database\Config::forge('default')
+#5 C:\xampp\htdocs\Soriano\TSA1,2\system\Commands\Database\Seed.php(71): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+#6 C:\xampp\htdocs\Soriano\TSA1,2\system\CLI\Commands.php(72): CodeIgniter\Commands\Database\Seed->run(Array)
+#7 C:\xampp\htdocs\Soriano\TSA1,2\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#8 C:\xampp\htdocs\Soriano\TSA1,2\system\Boot.php(444): CodeIgniter\CLI\Console->run()
+#9 C:\xampp\htdocs\Soriano\TSA1,2\system\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#10 C:\xampp\htdocs\Soriano\TSA1,2\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'task_today' in C:\xampp\htdocs\Soriano\TSA1,2\system\Database\MySQLi\Connection.php:230
+Stack trace:
+#0 C:\xampp\htdocs\Soriano\TSA1,2\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Soriano\TSA1,2\system\Database\Database.php(76): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Soriano\TSA1,2\system\Database\Config.php(111): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#3 C:\xampp\htdocs\Soriano\TSA1,2\system\Database\Seeder.php(103): CodeIgniter\Database\Config::forge('default')
+#4 C:\xampp\htdocs\Soriano\TSA1,2\system\Commands\Database\Seed.php(71): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+#5 C:\xampp\htdocs\Soriano\TSA1,2\system\CLI\Commands.php(72): CodeIgniter\Commands\Database\Seed->run(Array)
+#6 C:\xampp\htdocs\Soriano\TSA1,2\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#7 C:\xampp\htdocs\Soriano\TSA1,2\system\Boot.php(444): CodeIgniter\CLI\Console->run()
+#8 C:\xampp\htdocs\Soriano\TSA1,2\system\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#9 C:\xampp\htdocs\Soriano\TSA1,2\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#10 {main}
+CRITICAL - 2026-10-11 17:06:00 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'task_today'
+[Method: CLI, Route: db:seed/TasksSeeder]
+in SYSTEMPATH\Database\BaseConnection.php on line 601.
+ 1 SYSTEMPATH\Database\Database.php(76): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\Config.php(111): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+ 3 SYSTEMPATH\Database\Seeder.php(103): CodeIgniter\Database\Config::forge('default')
+ 4 SYSTEMPATH\Commands\Database\Seed.php(71): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+ 5 SYSTEMPATH\CLI\Commands.php(72): CodeIgniter\Commands\Database\Seed->run([...])
+ 6 SYSTEMPATH\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('db:seed', [...])
+ 7 SYSTEMPATH\Boot.php(444): CodeIgniter\CLI\Console->run()
+ 8 SYSTEMPATH\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+ 9 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+ERROR - 2026-10-11 17:06:03 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'task_today' in C:\xampp\htdocs\Soriano\TSA1,2\system\Database\MySQLi\Connection.php:200
+Stack trace:
+#0 C:\xampp\htdocs\Soriano\TSA1,2\system\Database\MySQLi\Connection.php(200): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'task_today', 3306, '', 0)
+#1 C:\xampp\htdocs\Soriano\TSA1,2\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Soriano\TSA1,2\system\Database\Database.php(76): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Soriano\TSA1,2\system\Database\Config.php(111): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#4 C:\xampp\htdocs\Soriano\TSA1,2\system\Database\Seeder.php(103): CodeIgniter\Database\Config::forge('default')
+#5 C:\xampp\htdocs\Soriano\TSA1,2\system\Commands\Database\Seed.php(71): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+#6 C:\xampp\htdocs\Soriano\TSA1,2\system\CLI\Commands.php(72): CodeIgniter\Commands\Database\Seed->run(Array)
+#7 C:\xampp\htdocs\Soriano\TSA1,2\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#8 C:\xampp\htdocs\Soriano\TSA1,2\system\Boot.php(444): CodeIgniter\CLI\Console->run()
+#9 C:\xampp\htdocs\Soriano\TSA1,2\system\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#10 C:\xampp\htdocs\Soriano\TSA1,2\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'task_today' in C:\xampp\htdocs\Soriano\TSA1,2\system\Database\MySQLi\Connection.php:230
+Stack trace:
+#0 C:\xampp\htdocs\Soriano\TSA1,2\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Soriano\TSA1,2\system\Database\Database.php(76): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Soriano\TSA1,2\system\Database\Config.php(111): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#3 C:\xampp\htdocs\Soriano\TSA1,2\system\Database\Seeder.php(103): CodeIgniter\Database\Config::forge('default')
+#4 C:\xampp\htdocs\Soriano\TSA1,2\system\Commands\Database\Seed.php(71): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+#5 C:\xampp\htdocs\Soriano\TSA1,2\system\CLI\Commands.php(72): CodeIgniter\Commands\Database\Seed->run(Array)
+#6 C:\xampp\htdocs\Soriano\TSA1,2\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#7 C:\xampp\htdocs\Soriano\TSA1,2\system\Boot.php(444): CodeIgniter\CLI\Console->run()
+#8 C:\xampp\htdocs\Soriano\TSA1,2\system\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#9 C:\xampp\htdocs\Soriano\TSA1,2\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#10 {main}
+CRITICAL - 2026-10-11 17:06:03 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'task_today'
+[Method: CLI, Route: db:seed/TasksSeeder]
+in SYSTEMPATH\Database\BaseConnection.php on line 601.
+ 1 SYSTEMPATH\Database\Database.php(76): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\Config.php(111): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+ 3 SYSTEMPATH\Database\Seeder.php(103): CodeIgniter\Database\Config::forge('default')
+ 4 SYSTEMPATH\Commands\Database\Seed.php(71): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+ 5 SYSTEMPATH\CLI\Commands.php(72): CodeIgniter\Commands\Database\Seed->run([...])
+ 6 SYSTEMPATH\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('db:seed', [...])
+ 7 SYSTEMPATH\Boot.php(444): CodeIgniter\CLI\Console->run()
+ 8 SYSTEMPATH\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+ 9 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+ERROR - 2026-10-11 17:07:50 --> Duplicate entry 'demo_user' for key 'username'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 294.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(294): mysqli->query('INSERT INTO `users` (`username`, `full_name`, `email`, `created_at`) VALUES (\'demo_user\', \'Demo User\', \'demo@example.com\', \'2026-10-11 17:07:50\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(905): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`username`, `full_name`, `email`, `created_at`) VALUES (\'demo_user\', \'Demo User\', \'demo@example.com\', \'2026-10-11 17:07:50\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(822): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`username`, `full_name`, `email`, `created_at`) VALUES (\'demo_user\', \'Demo User\', \'demo@example.com\', \'2026-10-11 17:07:50\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2362): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`username`, `full_name`, `email`, `created_at`) VALUES (:username:, :full_name:, :email:, :created_at:)', [...], false)
+ 5 APPPATH\Database\Seeds\TasksSeeder.php(29): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\Database\Seeder.php(155): App\Database\Seeds\TasksSeeder->run()
+ 7 SYSTEMPATH\Commands\Database\Seed.php(79): CodeIgniter\Database\Seeder->call('App\\Database\\Seeds\\TasksSeeder')
+ 8 SYSTEMPATH\CLI\Commands.php(72): CodeIgniter\Commands\Database\Seed->run([])
+ 9 SYSTEMPATH\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('db:seed', [...])
+10 SYSTEMPATH\Boot.php(444): CodeIgniter\CLI\Console->run()
+11 SYSTEMPATH\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+12 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2026-10-11 17:29:11 --> Error: Class "App\Models\TaskModel" not found
+[Method: GET, Route: /]
+in APPPATH\Controllers\Tasks.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Tasks->today()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tasks))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-11 17:30:26 --> Error: Class "App\Models\TaskModel" not found
+[Method: GET, Route: /]
+in APPPATH\Controllers\Tasks.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Tasks->today()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tasks))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-11 17:30:28 --> Error: Class "App\Models\TaskModel" not found
+[Method: GET, Route: /]
+in APPPATH\Controllers\Tasks.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Tasks->today()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tasks))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
